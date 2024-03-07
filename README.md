@@ -16,7 +16,7 @@ Service Layer는 핵심 비즈니스 로직이 작성되며 주로 하나의 트
 
 Facade Layer는 트랜잭션으로 묶이지 않는 FeignClient통신, Kafka Pub/Sub, SQS Pub/Sub등의 작업을 진행합니다. 이를 통해 Service Layer의 트랜잭션이 불필요한 작업으로 길어지는 걸 방지하고 있습니다.
 
-Handler Layer는 Repository Layer의 작업을 한층 더 추상화 해 Service Layer의 코드의 가독성을 높여줍니다. 해당 아이디어는 [Gemini님의 지속 성장 가능한 소프트웨어를 만들어가는 방법](https://geminikims.medium.com/%EC%A7%80%EC%86%8D-%EC%84%B1%EC%9E%A5-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%EB%B0%A9%EB%B2%95-97844c5dab63)이라는 글을 통해 알게 된 내용이며, 이를 프로젝트에 적용하면서 제가 느꼈던 점들은 [3주차. 내 프로젝트 구조](https://lotteon2.github.io/posts/project-structure/)라는 글에 정리되어 있습니다.
+Handler Layer는 Repository Layer의 작업을 한층 더 추상화 해 Service Layer의 코드의 가독성을 높여줍니다. 해당 아이디어는 [Gemini님의 지속 성장 가능한 소프트웨어를 만들어가는 방법](https://geminikims.medium.com/%EC%A7%80%EC%86%8D-%EC%84%B1%EC%9E%A5-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EA%B0%80%EB%8A%94-%EB%B0%A9%EB%B2%95-97844c5dab63)이라는 글을 통해 알게 된 내용이며, 이를 프로젝트에 적용하면서 제가 느꼈던 점들은 [비즈니스-로직을-어떻게-잘-보여줄-수-있을까](https://velog.io/@qwerty1434/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%A1%B0%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC1-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EB%A1%9C%EC%A7%81%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9E%98-%EB%B3%B4%EC%97%AC%EC%A4%84-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C)라는 글에 정리되어 있습니다.
 
 # 주요 기술
 
